@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a192f;
+  color: white;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 5px solid transparent;
+  animation: borderAnimation 3s infinite linear;
+}
+
+@keyframes borderAnimation {
+  0% { border-color: #ff0047; }
+  33% { border-color: #0088ff; }
+  66% { border-color: #00ff88; }
+  100% { border-color: #ff0047; }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.highlight {
+  color: #00ff88;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #00ff88;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
